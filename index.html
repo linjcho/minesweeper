@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+
+    <div class="top">
+      <div><strong id="bombs">10</strong> bombs left</div>
+      <button id="restart">New game</button>
+      <div><strong id="timer">0</strong> seconds</div>
+    </div>
+
+    <div class="options">
+      <div id="levels">
+        <button data-level="easy" class="active" title="9 x 9 board, 10 bombs">Easy</button>
+        <button data-level="medium" title="16 x 16 board, 40 bombs">Medium</button>
+        <button data-level="hard" title="30 x 16 board, 100 bombs">Hard</button>
+      </div>
+      <button id="theme">Dark mode</button>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <p id="message"></p>
+    <p class="hint">Left click to reveal. Right click to flag.</p>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
